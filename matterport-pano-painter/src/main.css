@@ -1,0 +1,47 @@
+#sdk-iframe {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+.banner {
+  position: fixed;
+  bottom: calc(100% - 2em);
+  width: 100%;
+  height: 2em;
+  line-height: 2em;
+  background-color: #f5f4f3;
+  padding-left: 8px;
+  transition: bottom .5s .5s;
+}
+
+.banner.collapsed {
+  bottom: 100%;
+}
+
+.banner.error {
+  background-color: #ff3158;
+}
+
+/* debug */
+body.has-saves {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.save {
+  margin: 0 32px;
+  width: 64px;
+  height: 25px;
+}
+
+.saves img {
+  width: 128px;
+  height: 128px;
+}

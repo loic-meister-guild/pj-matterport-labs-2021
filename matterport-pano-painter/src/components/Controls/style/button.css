@@ -1,0 +1,24 @@
+.button {
+  position: relative;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.button * {
+  pointer-events: none;
+}
+
+.button > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: inherit;
+  width: inherit;
+}
+
+.button:not(.enabled) {
+  opacity: 0.5;
+  cursor: unset;
+}

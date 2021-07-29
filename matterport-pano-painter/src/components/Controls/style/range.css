@@ -1,0 +1,89 @@
+.range-label {
+  display: inline-block;
+  width: 60px;
+  text-align: right;
+  margin-right: 24px;
+}
+
+.range-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 320px;
+  height: 20px;
+  pointer-events: all;
+}
+
+.range-visual {
+  pointer-events: none;
+  position: relative;
+  top: 5px;
+  left: 10px;
+  width: 300px;
+}
+
+.range-track {
+  position: absolute;
+  top: 3px;
+  width: 100%;
+  height: 4px;
+  border-radius: 200px;
+  background-color: #6d6d6d;
+}
+
+.range-progress {
+  position: absolute;
+  width: 0;
+  height: 4px;
+  border-radius: 200px;
+  background-color: #f5f4f3;
+}
+
+.range-thumb {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: -5px;
+  margin-left: -10px;
+  border-radius: 50%;
+  background-color: #f5f4f3;
+}
+
+.range-bubble {
+  transform: scale(0);
+  transition: transform 0.25s;
+}
+
+.range-wrapper:hover .range-bubble {
+  transform: scale(1);
+}
+
+.range-value {
+  position: absolute;
+  padding: 6px;
+  bottom: calc(100% + 8px);
+  left: 10px;
+  transform: translate(-50%, 0);
+  background-color: #6d6d6d;
+  border-radius: 6px;
+  color: #f5f4f3;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.range-value::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: 4px solid transparent;
+  border-top: 8px solid #6d6d6d;
+}
+
+.range-internal {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  opacity: 0;
+  cursor: grab;
+}

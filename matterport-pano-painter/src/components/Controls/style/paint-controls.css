@@ -1,0 +1,92 @@
+.paint-control-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.controls {
+  width: 430px;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 100vh;
+  margin-top: -176px;
+  text-align: center;
+}
+
+.tool-button-container {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.tool-button-container > * {
+  pointer-events: all;
+}
+
+.tool-button {
+  background-color: #f5f4f3;
+  color: black;
+  width: 65px;
+  height: 65px;
+  font-size: 20px;
+  line-height: 65px;
+  margin: 0 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.tool-button:hover {
+  background-color: #ff3158;
+  color:white;
+}
+
+.tool-sub-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.tool-sub-button:hover {
+  background-color: rgba(0, 0, 0, 1.0);
+}
+
+.tool-button.icon::before,
+.tool-sub-button.icon::before {
+  height: 100%;
+  width: 100%;
+}
+
+.tool-button.icon-brush {
+  font-size: 30px;
+}
+
+.tool-button.icon-checkmark {
+  color: #00a170;
+}
+
+.tool-button.icon-brush:hover {
+  color: white;
+}
+
+.tool-options-container {
+  color: white;
+  width: 100%;
+  pointer-events: none;
+}
+
+.tool-options-container > * {
+  margin-top: 24px;
+}
+
+.tool-button.selected,
+.tool-sub-button.selected {
+  box-shadow: 0 0 3px 1px #ff3158;
+}

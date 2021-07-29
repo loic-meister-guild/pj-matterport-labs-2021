@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'labs-paint';
+  src:
+    url("../fonts/labs-paint.ttf") format('truetype'),
+    url("../fonts/labs-paint.woff") format('woff'),
+    url("../fonts/labs-paint.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'labs-paint' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dropper-fill:before {
+  content: "\\e901";
+}
+.icon-dropper-outline:before {
+  content: "\\e908";
+}
+.icon-dropper:before {
+  content: "\\e902";
+}
+.icon-bucket-fill:before {
+  content: "\\e906";
+}
+.icon-bucket:before {
+  content: "\\e907";
+}
+.icon-brush:before {
+  content: "\\e900";
+}
+.icon-history:before {
+  content: "\\e904";
+}
+.icon-checkmark:before {
+  content: "\\e905";
+}
+.icon-chevron-down:before {
+  content: "\\e909";
+}
+

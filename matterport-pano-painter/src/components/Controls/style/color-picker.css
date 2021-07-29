@@ -1,0 +1,27 @@
+/* Color */
+.color-selector {
+  opacity: 0;
+  padding: 0;
+}
+
+.color-preview::before {
+  font-family: 'labs-paint' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  content: '\\e907';
+  position: absolute;
+  left: 0;
+  width: inherit;
+}
+
+.color-preview > input {
+  pointer-events: all;
+}
+
+.icon-dropper-outline {
+  color: black;
+}
+

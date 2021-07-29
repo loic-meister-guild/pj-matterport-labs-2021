@@ -1,0 +1,41 @@
+.history-buttons-container {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  pointer-events: none;
+}
+
+.history-button {
+  display: inline-block;
+  height: 32px;
+  width: 96px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-left: 10px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 32px;
+  border: 0;
+  border-radius: 4px;
+  pointer-events: all;
+}
+
+.history-button > * {
+  position: unset;
+}
+
+.history-button.enabled:hover {
+  background-color: rgba(0, 0, 0, 1.0);
+}
+
+.history-button .icon {
+  display: inline-block;
+  width: auto;
+  font-size: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.history-redo > .icon-history {
+  transform: scaleX(-1);
+}

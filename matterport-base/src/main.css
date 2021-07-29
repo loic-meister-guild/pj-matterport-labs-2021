@@ -1,0 +1,11 @@
+#sdk-iframe {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  body {
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    overflow: hidden;
+  }
