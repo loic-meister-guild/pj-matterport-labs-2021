@@ -5,8 +5,9 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: {
-    app: './src/index.tsx',
+  entry: './src/index.tsx',
+  output: {
+    filename: 'js/[name].bundle.js'
   },
   devtool: 'source-map',
   resolve: {
@@ -20,7 +21,10 @@ module.exports = {
       inject: true
     }),
     new CopyPlugin([
-      { from: 'bundle', to: 'dist/bundle' },
+      {
+        from: 'node_modules/@mp/bundle-sdk',
+        to: 'bundle'
+      },
     ]),
   ],
   module: {
@@ -36,11 +40,8 @@ module.exports = {
       },
     ]
   },
-  output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
   devServer: {
-    port: 8000
+    port: 8000,
+    writeToDisk: true
   }
 };

@@ -1,19 +1,26 @@
 {
   "name": "matteport-sdk-app",
   "version": "1.0.0",
-  "main": "index.tsx",
+  "main": "./src/index.tsx",
+  "private": true,
   "repository": "git@github.com:loic-meister-guild/pj-matterport-labs-2021",
   "author": "LE TEXIER Loic <l.loic@m-gild.com>",
   "license": "UNLICENSED",
   "dependencies": {
-    "@types/react": "^17.0.14",
-    "@types/react-dom": "^17.0.9",
-    "@types/three": "^0.130.0",
+    "@types/hls.js": "^1.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "@types/three": "^0.129.1",
+    "classnames": "^2.3.1",
     "css-loader": "^5.2.6",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "style-loader": "1.1.3",
-    "three": "^0.130.1"
+    "dexie": "^3.0.3",
+    "hls.js": "^1.0.7",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "style-loader": "^1.1.3",
+    "three": "^0.124.0",
+    "typescript": "^3.7.5"
   },
   "scripts": {
     "start": "webpack-dev-server"
@@ -22,11 +29,11 @@
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.1.1",
     "html-webpack-plugin": "^3.2.0",
-    "source-map-loader": "0.2.4",
+    "mini-css-extract-plugin": "^1.6.0",
+    "source-map-loader": "^0.2.4",
     "ts-loader": "^7.0.1",
-    "typescript": "^3.8.3",
-    "webpack": "^4.41.3",
+    "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.0"
+    "webpack-dev-server": "^3.11.2"
   }
 }

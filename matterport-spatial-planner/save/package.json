@@ -1,0 +1,7 @@
+{
+  "name": "@mp/save",
+  "version": "1.0.0",
+  "main": "mp_labs_save/save/index.ts",
+  "scripts": {
+  }
+}

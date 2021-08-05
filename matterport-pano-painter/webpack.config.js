@@ -25,7 +25,6 @@ module.exports = {
         from: 'node_modules/@mp/bundle-sdk',
         to: 'bundle'
       },
-      { from: 'assets', to: 'assets'},
     ]),
   ],
   module: {
